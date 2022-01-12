@@ -8,15 +8,17 @@ import org.openqa.selenium.support.PageFactory;
 
 public class IndexPage extends BaseClass {
 
-    @FindBy(xpath = "//*[@id=\"header\"]/div[2]/div/div/nav/div[1]/a")
+    @FindBy(xpath = "//a[@class=\"login\"]")
     WebElement signInButton;
 
     @FindBy(xpath="//*[@id=\"header_logo\"]/a/img")
     WebElement logoImage;
 
     @FindBy(id = "search_query_top")
+
     WebElement searchBox;
     @FindBy(xpath = "//button[@class=\"btn btn-default button-search\"]")
+
     WebElement searchButton;
 
     public IndexPage() {

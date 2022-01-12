@@ -1,7 +1,6 @@
 package com.mystore.basepackage;
 
 
-
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -17,66 +16,60 @@ import org.openqa.selenium.safari.SafariDriver;
 import org.testng.annotations.BeforeTest;
 
 public class BaseClass {
- public static Properties prop;
- public static WebDriver driver;
+    public static Properties prop;
+    public static WebDriver driver;
+
     @BeforeTest
     public void loadConfig() {
         try {
-            prop = new Properties();
+            prop = new Properties ( );
 
-            System.out.println("super constructor invoked");
-          try{
-              FileInputStream fi = new FileInputStream("Configuration/Configuration.properties");
-                prop.load(fi);
-            }
-            catch (FileNotFoundException e) {
-                System.out.println("super constructor invoked");
-                e.printStackTrace();
+            System.out.println ("super constructor invoked");
+            try {
+                FileInputStream fi = new FileInputStream ("Configuration/Configuration.properties");
+                prop.load (fi);
+            } catch (FileNotFoundException e) {
+                System.out.println ("super constructor invoked");
+                e.printStackTrace ( );
             }
 
-            System.out.println("driver:  " + driver);
+            System.out.println ("driver:  " + driver);
 
         } catch (FileNotFoundException e) {
 
-            e.printStackTrace();
+            e.printStackTrace ( );
         } catch (IOException i) {
-            i.printStackTrace();
+            i.printStackTrace ( );
         }
     }
 
-        public static void launchApp()
-        {
+    public static void launchApp() {
 
-            String browserName= prop.getProperty("browser");
+        String browserName = prop.getProperty ("browser");
 
-            if(browserName.contains("Chrome"))
+        if (browserName.contains ("Chrome")) {
+            WebDriverManager.chromedriver ( ).setup ( );
 
-            {
-                WebDriverManager.chromedriver().setup();
+            driver = new ChromeDriver ( );
 
-                driver= new ChromeDriver();
+        } else if (browserName.contains ("Safari")) {
 
-            }
-
-           else if(browserName.contains("Safari"))
-            {
-
-                driver= new SafariDriver();
-            }
-           else if(browserName.contains("IE"))
-            {
-                driver= new FirefoxDriver();
-            }
-
-            ActionDriver.implicitWait(driver,10);
-           ActionDriver.pageLoadTimeOut(driver,30);
-           driver.get(prop.getProperty("url"));
-
-
+            driver = new SafariDriver ( );
+        } else if (browserName.contains ("IE")) {
+            driver = new FirefoxDriver ( );
         }
 
+        ActionDriver.implicitWait (driver, 10);
+        ActionDriver.pageLoadTimeOut (driver, 30);
+        driver.get (prop.getProperty ("url"));
+
+        driver.manage ( ).window ( ).maximize ( );
+        System.out.println ("reached");
 
     }
+
+
+}
 
 
 

@@ -11,7 +11,7 @@ public class LoginPage extends BaseClass {
     @FindBy(name="email")
     WebElement emailTextBox;
 
-    @FindBy(name = "email_create")
+    @FindBy(name = "email")
     WebElement createEmailTextBox;
 
     @FindBy(name="SubmitCreate")
