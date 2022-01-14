@@ -1,41 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd"><suite name="All Test Suite">
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
     <test verbose="2" preserve-order="true" name="/Users/saby/IdeaProjects/My Store">
 
-       <classes>
-     <class name="com.mystore.testscripts.IndexPageTest">
-         <methods>
-             <include name="verifyStoreLogo">
+        <classes>
+            <class name="com.mystore.testscripts.IndexPageTest">
+                <methods>
+                    <include name="verifyStoreLogo">
 
-             </include>
-             <include name="verifyTitle">
+                    </include>
+                    <include name="verifyTitle">
 
-             </include>
+                    </include>
 
-         </methods>
-
-
-
-     </class>
+                </methods>
 
 
-       </classes>
+            </class>
+
+            <class name="com.mystore.testscripts.LoginTest">
+                <methods>
+                    <include name="verifyLogin">
+
+                    </include>
 
 
+                </methods>
 
 
+            </class>
 
 
+        </classes>
 
 
     </test>
-
-
-
-
-
-
-
 
 
 </suite>
