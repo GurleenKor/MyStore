@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="3" total="6" passed="1" failed="1" skipped="1">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-01-15T00:25:58 GMT-08:00" name="All Test Suite" finished-at="2022-01-15T00:26:23 GMT-08:00" duration-ms="25439">
+    <groups>
+    </groups>
+    <test started-at="2022-01-15T00:25:58 GMT-08:00" name="/Users/saby/IdeaProjects/My Store" finished-at="2022-01-15T00:26:23 GMT-08:00" duration-ms="25439">
+      <class name="com.mystore.testscripts.LoginTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.mystore.testscripts.LoginTest@27ae2fd0]" started-at="2022-01-15T00:25:58 GMT-08:00" name="setUp" finished-at="2022-01-15T00:26:04 GMT-08:00" duration-ms="6667" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyLogin()[pri:0, instance:com.mystore.testscripts.LoginTest@27ae2fd0]" started-at="2022-01-15T00:26:04 GMT-08:00" name="verifyLogin" finished-at="2022-01-15T00:26:07 GMT-08:00" duration-ms="2094" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLogin -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.mystore.testscripts.LoginTest@27ae2fd0]" started-at="2022-01-15T00:26:07 GMT-08:00" name="setUp" finished-at="2022-01-15T00:26:13 GMT-08:00" duration-ms="6348" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="abc()[pri:0, instance:com.mystore.testscripts.LoginTest@27ae2fd0]" started-at="2022-01-15T00:26:13 GMT-08:00" name="abc" finished-at="2022-01-15T00:26:15 GMT-08:00" duration-ms="2470" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [b] but found [a]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [b] but found [a]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:629)
+at org.testng.Assert.assertEquals(Assert.java:639)
+at com.mystore.testscripts.LoginTest.abc(LoginTest.java:53)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- abc -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.mystore.testscripts.LoginTest@27ae2fd0]" started-at="2022-01-15T00:26:16 GMT-08:00" name="setUp" finished-at="2022-01-15T00:26:21 GMT-08:00" duration-ms="5566" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="skipThisTest()[pri:0, instance:com.mystore.testscripts.LoginTest@27ae2fd0]" started-at="2022-01-15T00:26:21 GMT-08:00" name="skipThisTest" finished-at="2022-01-15T00:26:23 GMT-08:00" duration-ms="1666" status="SKIP">
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[This test is being ignored]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: This test is being ignored
+at com.mystore.testscripts.LoginTest.skipThisTest(LoginTest.java:61)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- skipThisTest -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.mystore.testscripts.LoginTest@27ae2fd0]" started-at="2022-01-15T00:26:23 GMT-08:00" name="closeBrowser" finished-at="2022-01-15T00:26:23 GMT-08:00" duration-ms="217" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- com.mystore.testscripts.LoginTest -->
+      <class name="com.mystore.testscripts.IndexPageTest">
+        <test-method is-config="true" signature="loadConfig()[pri:0, instance:com.mystore.testscripts.IndexPageTest@4c1d9d4b]" started-at="2022-01-15T00:25:58 GMT-08:00" name="loadConfig" finished-at="2022-01-15T00:25:58 GMT-08:00" duration-ms="8" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loadConfig -->
+      </class> <!-- com.mystore.testscripts.IndexPageTest -->
+    </test> <!-- /Users/saby/IdeaProjects/My Store -->
+  </suite> <!-- All Test Suite -->
+</testng-results>

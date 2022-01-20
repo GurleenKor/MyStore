@@ -6,13 +6,14 @@ import com.mystore.pageobjects.LoginPage;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
+import org.testng.SkipException;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import java.time.Duration;
 import java.util.Properties;
-
 public class LoginTest extends BaseClass {
     LoginPage page;
     IndexPage ip ;
@@ -43,6 +44,25 @@ public class LoginTest extends BaseClass {
 
 
     }
+
+
+    @Test
+    public void abc() {
+        page = new LoginPage ( );
+        page.login (prop.getProperty ("username"), prop.getProperty ("password"));
+        Assert.assertEquals ("a","b");
+    }
+
+    @Test
+    public void skipThisTest()
+    {
+        page = new LoginPage ( );
+        page.login (prop.getProperty ("username"), prop.getProperty ("password"));
+        throw new SkipException("This test is being ignored");
+    }
+
+
+
 
     @AfterTest
 

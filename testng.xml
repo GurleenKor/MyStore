@@ -1,17 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="All Test Suite">
+
+    <listeners>
+        <listener class-name="com.mystore.Listener.ListenerTest"/>
+        
+    </listeners>
+
+
     <test verbose="2" preserve-order="true" name="/Users/saby/IdeaProjects/My Store">
 
         <classes>
             <class name="com.mystore.testscripts.IndexPageTest">
                 <methods>
-                    <include name="verifyStoreLogo">
+                    <exclude name="verifyStoreLogo">
 
-                    </include>
-                    <include name="verifyTitle">
+                    </exclude>
+                    <exclude name="verifyTitle">
 
-                    </include>
+                    </exclude>
 
                 </methods>
 
@@ -20,10 +27,9 @@
 
             <class name="com.mystore.testscripts.LoginTest">
                 <methods>
-                    <include name="verifyLogin">
-
-                    </include>
-
+                    <include name="verifyLogin"></include>
+                    <include name="abc"></include>
+                    <include name="skipThisTest"></include>
 
                 </methods>
 
